@@ -1,0 +1,25 @@
+README
+
+Usage: ./scheduler <input_file.txt> <FCFS | RR> <Half of cs> <quantum>
+
+===================================================================================
+
+Make sure there are not more than two newline characters at the end of the input file.
+
+====================================================================================
+
+- A context switch occurs whenever a process is put on the cpu and when it is taken off to wait.
+- A context switch does not occur when the final process terminates.
+
+So with the following input;
+
+0 2 10 8 10
+5 2 5 6 5
+
+we get the following output on a FCFS scheduler:
+
+(CS) RUN 10 (CS) (WAIT 8) (CS) RUN 5 (CS) (WAIT 6) (CS) RUN 10 (CS) RUN 5
+
+===================================================================================
+
+
